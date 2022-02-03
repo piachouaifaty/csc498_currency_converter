@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int lbp = Integer.parseInt(lbp_amount.getText().toString());
                 int result = lbp/exchange_rate;
+                result_usd.setText(result+" USD");
 
             }
         });
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int usd = Integer.parseInt(usd_amount.getText().toString());
                 int result = usd*exchange_rate;
+                result_lbp.setText(result+" LBP");
 
 
             }
