@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/resultUSDTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="473dp" />
-
     <EditText
         android:id="@+id/LBPAmountEditText"
         android:layout_width="wrap_content"
@@ -25,16 +16,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="186dp" />
+        tools:layout_editor_absoluteY="355dp" />
 
     <Button
-        android:id="@+id/USDtoLBPButton"
+        android:id="@+id/LBPtoUSDButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:text="to LBP"
-        app:layout_constraintStart_toEndOf="@+id/USDAmountEditText"
-        tools:layout_editor_absoluteY="393dp" />
+        android:text="to USD"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/resultUSDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <TextView
+        android:id="@+id/resultLBPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="126dp" />
 
     <EditText
         android:id="@+id/USDAmountEditText"
@@ -46,22 +55,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="396dp" />
+        tools:layout_editor_absoluteY="528dp" />
 
     <Button
-        android:id="@+id/LBPtoUSDButton"
+        android:id="@+id/USDtoLBPButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="to USD"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="183dp" />
+        android:layout_marginStart="20dp"
+        android:text="to LBP"
+        app:layout_constraintStart_toEndOf="@+id/USDAmountEditText"
+        tools:layout_editor_absoluteY="525dp" />
 
-    <TextView
-        android:id="@+id/resultUSDTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="268dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
